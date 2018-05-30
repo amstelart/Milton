@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Milton</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__wrap">
+          <div class="page-header__inner">
+            <div class="page-header__part">
+              <a class="logo page-header__logo" href="index.html"><img src="img/logo.png" width="211px" height="62px" alt=""></a>
+            </div>
+            <div class="page-header__part page-header__part--contacts">
+              <div class="page-contacts page-contacts--top">
+                <div class="page-contacts__item">
+                  <a href="#" class="btn btn--main-outline">Заказать консультацию</a>
+                </div>
+                <div class="page-contacts__item">
+                  <div class="page-contacts__text">Геленджик, ул. Приморская 30</div>
+                  <a href="#" class="page-contacts__link">Смотреть на карте</a>
+                </div>
+                <div class="page-contacts__item">
+                  <div class="page-contacts__text">8 800 900 50 35</div>
+                  <a href="#" class="page-contacts__link">Обратный звонок</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header__nav">
+          <div class="page-header__inner">
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active">
+                  <a href="" class="main-nav__link">
+                    Недвижимость
+                  </a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                          Контакты
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                          Услуги
+                        </a>
+                        <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-3">
+                          <ul class="main-nav__list  main-nav__list--lvl-3">
+                            <li class="main-nav__item  main-nav__item--lvl-3">
+                              <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                                Вёрстка HTML-CSS
+                              </a>
+                            </li>
+                            <li class="main-nav__item  main-nav__item--lvl-3">
+                              <a href="" class="main-nav__link  main-nav__link--lvl-3">
+                                Стриптиз
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    Инвестиции
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    Полезная информация
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <main role="main">
+        <div class="content">
+
+          <div class="content__inner">
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><span class="breadcrumbs__link">Статьи</span></li>
+            </ul>
+
+            <h1 class="page__title">Статьи</h1>
+
+            <h2>Заголовок 2</h2>
+
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. <a href="#">Пример ссылки</a> Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. <a href="#">Пример активный ссылки</a>, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+
+            <h3>Заголовок 3</h3>
+
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. <a href="#">Пример ссылки</a> Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. <a href="#">Пример активный ссылки</a>, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+
+            <h4>Заголовок 4</h4>
+
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. <a href="#">Пример ссылки</a> Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. <a href="#">Пример активный ссылки</a>, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+
+            <h5>Заголовок 5</h5>
+
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. <a href="#">Пример ссылки</a> Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. <a href="#">Пример активный ссылки</a>, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+
+            <h4>Список:</h4>
+
+            <ul class="list">
+              <li>элемент списка;</li>
+              <li>элемент списка;</li>
+              <li>элемент списка;</li>
+              <li>элемент списка;</li>
+              <li>элемент списка;</li>
+              <li>элемент списка;</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </main>
+
+      <section class="feedback">
+        <div class="feedback__body">
+          <h1 class="feedback__title">Заказать звонок</h1>
+          <p class="feedback__text">Наши менеджеры перезвонят вам и ответят на все вопросы</p>
+          <form action="" class="feedback-form">
+            <div class="feedback-form__flex">
+              <label class="field-text feedback-form__field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                </span>
+              </label>
+              <label class="field-text feedback-form__field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                </span>
+              </label>
+              <div class="field-actions feedback-form__field">
+                <button class="btn" type="submit">Заказать звонок</button>
+              </div>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text">Я принимаю условия передачи информации</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="feedback__image">
+          <img src="img/feedback-img.jpg" alt="">
+        </div>
+      </section>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__main">
+            <div class="page-footer__part">
+              <a class="logo page-footer__logo" href="index.html"><img src="img/logo.png" width="211px" height="62px" alt=""></a>
+              <div class="social">
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <img class="social__icon" width="26px" height="26px" src="img/icon-social-vk.svg" alt="">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <img class="social__icon" width="26px" height="26px" src="img/icon-social-fa.svg" alt="">
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <img class="social__icon" width="26px" height="26px" src="img/icon-social-ok.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__part page-footer__part--nav">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Недвижимость</a>
+                    <div class="footer-nav__sublist-wrapper">
+                      <ul class="footer-nav__list">
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Новостройки</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Многокомнатные</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Дома</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Земля</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Коммерческая недвижимость</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Инвестиционная недвижимость</a>
+                        </li>
+                        <li class="footer-nav_item">
+                          <a href="#" class="footer-nav__link">Эксклюзивная недвижимость</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Инвестиции</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Отзывы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Частые вопросы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="#" class="footer-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="page-footer__part">
+              <div class="page-contacts">
+                <div class="page-contacts__item">
+                  <div class="page-contacts__text">8 800 900 50 35</div>
+                  <a href="#" class="page-contacts__link">Обратный звонок</a>
+                </div>
+                <div class="page-contacts__item">
+                  <div class="page-contacts__text">Геленджик, ул. Приморская 30</div>
+                  <a href="#" class="page-contacts__link">Смотреть на карте</a>
+                </div>
+                <div class="page-contacts__item">
+                  <a href="#" class="btn btn--main-outline">Заказать консультацию</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__copyright">
+            <p>Milton © 2018</span>
+            <p>Разработка - <a href="#">Showbiz Interactive</a></span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
