@@ -67,9 +67,11 @@ $transition-time:             0.3s !default;
 
   &__link {
     display: block;
-    padding: 0.5em;
+    padding: 0.5em 1.7em;
     text-decoration: none;
-    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
 
     &:hover,
     &:focus {

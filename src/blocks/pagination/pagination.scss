@@ -14,17 +14,18 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
   display: flex;
   flex-wrap: wrap;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  justify-content: center;
 
   &__item {
     display: block;
-    padding: 0.5em;
-    min-width: 2.5em;
-    border: 1px solid $border-color;
+    font-size: 18px;
+    padding: 0.1em;
+    min-width: 2em;
+    border-radius: 50%;
     text-decoration: none;
     text-align: center;
-    color: $text-color;
+    color: #bdbdbd;
+    font-weight: 700;
 
     & + & {
       border-left: 0;
@@ -33,19 +34,21 @@ $border-color:                hsl(0, 0%, 60%) !default;
     &:hover,
     &:focus {
       text-decoration: none;
-      color: $text-color;
+      color: #092c37;
     }
 
     @at-root a#{&} {
 
       &:hover,
       &:focus {
-        background-color: $gray-lightest;
+        // background-color: #092c37;
+        // color: $color-main;
       }
     }
 
     &--active {
-      background-color: $gray-lightest;
+      background-color: #092c37;
+      color: $color-main;
     }
   }
 }

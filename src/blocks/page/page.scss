@@ -33,6 +33,19 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 43px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  &__pagination {
+    margin-top: $line-height;
+    margin-bottom: $line-height;
+  }
 }
 
 *,
@@ -89,4 +102,11 @@ svg {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.separate {
+  height: 2px;
+  width: 60px;
+  background: #8dd6d7;
+  margin: auto;
 }

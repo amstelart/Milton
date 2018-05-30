@@ -58,7 +58,20 @@
     "embed-responsive": [],
     "pie-chart": [],
     "fields-group": [],
-    "tooltip": []
+    "tooltip": [],
+    "social": [],
+    "footer-nav": [],
+    "page-contacts": [],
+    "content": [],
+    "feedback": [],
+    "reviews": [],
+    "review-card": [],
+    "wherefore": [],
+    "advantages": [],
+    "section-title": [],
+    "catalog": [],
+    "catalog-card": [],
+    "main-header": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

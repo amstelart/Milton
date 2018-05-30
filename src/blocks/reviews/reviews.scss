@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока reviews, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.reviews {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 15px;
+
+  .section-title {
+    text-align: center;
+  }
+
+  &__inner {
+    @include container;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__cards-wrap {
+    @include row;
+
+    .review-card {
+      @include col();
+      @include col(lg, 6);
+      margin-bottom: 30px;
+
+    }
+  }
+}
