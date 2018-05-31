@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока articles-wrap, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.articles-wrap {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  .articles-card {
+    @include col();
+    @include col(lg, 4);
+    @include col(md, 6);
+  }
+
+}

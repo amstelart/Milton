@@ -40,6 +40,12 @@
     font-size: 43px;
     margin-top: 0;
     margin-bottom: 0.5em;
+
+    &.center-title {
+      margin-top: 1em;
+      margin-bottom: 1.2em;
+      text-align: center;
+    }
   }
 
   &__pagination {

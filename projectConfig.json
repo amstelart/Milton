@@ -71,7 +71,14 @@
     "section-title": [],
     "catalog": [],
     "catalog-card": [],
-    "main-header": []
+    "main-header": [],
+    "contacts": [],
+    "contacts-map": [],
+    "info": [],
+    "faq": [],
+    "articles": [],
+    "articles-wrap": [],
+    "articles-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

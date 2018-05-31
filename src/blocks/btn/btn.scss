@@ -70,9 +70,13 @@ $border-radius:               3px !default;
 
 
   &--main {
-    color: #fff;
+    color: #092c37;
     background-color: $color-main;
     border: 1px solid $color-main;
+    padding: 0.6em 0.9em 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {
@@ -94,6 +98,7 @@ $border-radius:               3px !default;
     background-color: transparent;
     border: 2px solid $color-main;
     font-size: 14px;
+    font-weight: 700;
 
     &:hover,
     &:focus {
