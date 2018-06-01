@@ -8,6 +8,20 @@
 
   &__item {
     margin-bottom: 15px;
+
+    &--adds {
+      padding-left: 25px;
+      background-image: svg-load('../blocks/page-contacts/bg-img/map-icon.svg' , fill = #fff );
+      background-repeat: no-repeat;
+      background-size: 15px 20px;
+    }
+
+    &--phone {
+      padding-left: 25px;
+      background-image: svg-load('../blocks/page-contacts/bg-img/phone-icon.svg' , fill = #fff );
+      background-repeat: no-repeat;
+      background-size: 17px 20px;
+    }
   }
 
   &__text {
@@ -35,6 +49,14 @@
     #{$block-name}__item {
       margin-left: 30px;
       margin-bottom: 0;
+
+      &--adds {
+        background-image: svg-load('../blocks/page-contacts/bg-img/map-icon.svg' , fill = #9ce7e8 );
+      }
+
+      &--phone {
+        background-image: svg-load('../blocks/page-contacts/bg-img/phone-icon.svg' , fill = #9ce7e8 );
+      }
     }
   }
 

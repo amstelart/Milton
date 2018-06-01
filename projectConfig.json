@@ -5,7 +5,9 @@
     "typo": [],
     "page-header": [],
     "page-footer": [],
-    "main-nav": [],
+    "main-nav": [
+      "--page"
+    ],
     "logo": [],
     "btn": [],
     "sprite-svg": [],
