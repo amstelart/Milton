@@ -42,4 +42,10 @@ $text-color:                  hsl(0, 0%, 10%) !default;
       text-decoration: none;
     }
   }
+
+  &--object {
+    #{$block-name}__link {
+      color: #fff;
+    }
+  }
 }

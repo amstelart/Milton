@@ -13,42 +13,64 @@ $border-color:                hsl(0, 0%, 60%) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
 
   &__item {
     display: block;
-    font-size: 18px;
-    padding: 0.1em;
-    min-width: 2em;
     border-radius: 50%;
+    padding: 0.35em 0.5em;
+    font-weight: bold;
+    font-size: 18px;
+    min-width: 2.4em;
+    // border: 1px solid $border-color;
     text-decoration: none;
     text-align: center;
     color: #bdbdbd;
-    font-weight: 700;
-
-    & + & {
-      border-left: 0;
-    }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      color: #092c37;
+      color: $text-color;
     }
 
     @at-root a#{&} {
 
       &:hover,
       &:focus {
-        // background-color: #092c37;
-        // color: $color-main;
+
       }
     }
 
     &--active {
       background-color: #092c37;
       color: $color-main;
+
+      &:hover,
+      &:focus {
+        background-color: #092c37;
+        color: $color-main;
+      }
     }
+  }
+
+  &__arrow {
+      padding: 0.5em 1em;
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: #092c37;
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: $color-main;
+        }
+      }
   }
 }

@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока object-location, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.object-location {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container;
+  }
+
+  &__addr {
+    span {
+      color: #a8a8a8;
+    }
+  }
+
+  &__map {
+    img {
+      display: block;
+    }
+  }
+
+}

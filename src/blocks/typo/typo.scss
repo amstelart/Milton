@@ -216,6 +216,17 @@ $border-radius:               3px !default;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Bad Script';
+	src: url('../fonts/BadScript-Regular.eot');
+	src: local('Bad Script Regular'), local('BadScript-Regular'),
+		url('../fonts/BadScript-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BadScript-Regular.woff') format('woff'),
+		url('../fonts/BadScript-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
   // ТОЛЬКО типографика!
   font-family: $font-family;

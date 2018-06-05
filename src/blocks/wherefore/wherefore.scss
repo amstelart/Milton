@@ -6,9 +6,19 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  background: #092c37;
   padding: 45px 0;
   color: #fff;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(9, 44, 55, 0.85);
+  }
 
   .section-title {
     text-align: center;
@@ -16,6 +26,12 @@
 
   &__inner {
     @include container;
+    position: relative;
+    z-index: 2;
+
+    .section-title {
+      margin-bottom: 60px;
+    }
   }
 
   &__cards-wrap {

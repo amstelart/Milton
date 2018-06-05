@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока object-top, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.object-top {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  height: 555px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background: rgba(10, 14, 23, 0.5);
+  }
+
+  &__inner {
+    @include container;
+    position: relative;
+    z-index: 2;
+
+    .breadcrumbs {
+
+    }
+  }
+
+}

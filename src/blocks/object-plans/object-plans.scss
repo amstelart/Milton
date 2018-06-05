@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока object-plans, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.object-plans {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container;
+  }
+
+  &__cards-wrap {
+    @include row;
+
+    .object-card {
+      @include col();
+      @include col(lg, 4);
+      margin-bottom: 30px;
+    }
+  }
+
+}

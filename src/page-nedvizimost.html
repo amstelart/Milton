@@ -28,10 +28,64 @@
 
             <h1 class="page__title">Новостройки</h1>
 
+            <div class="filters">
+              <div class="filters__item">
+                <div class="filters__title">Количество комнат</div>
+                <label class="field-select">
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>1-комнатные</option>
+                      <option>2-комнатные</option>
+                      <option>3-комнатные</option>
+                      <option>4-комнатные</option>
+                      <option>5-комнатные</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+              <div class="filters__item">
+                <div class="filters__title">Район</div>
+                <label class="field-select">
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>Центральный</option>
+                      <option>Северный</option>
+                      <option>Южный</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+              <div class="filters__item">
+                <div class="filters__title">Площадь, м<sup>2</sup></div>
+                <div class="nouislider-wrap">
+                  <input type="text" id="area-slider-start">
+                  <div class="nouislider" id="area-slider"></div>
+                  <input type="text" id="area-slider-end">
+                </div>
+              </div>
+              <div class="filters__item">
+                <div class="filters__title">Цена, руб</div>
+                <div class="nouislider-wrap">
+                  <input type="text" id="cost-slider-start">
+                  <div class="nouislider" id="cost-slider"></div>
+                  <input type="text" id="cost-slider-end">
+                </div>
+              </div>
+              <div class="filters__item">
+                <div class="filters__title">Номер объекта</div>
+                <form class="search-form">
+                  <input class="search-form__input" type="search">
+                  <button class="search-form__btn">Search</button>
+                </form>
+              </div>
+            </div>
+
           </div>
 
         </div>
       </main>
+
+
 
       <section class="catalog">
         <div class="catalog__inner">

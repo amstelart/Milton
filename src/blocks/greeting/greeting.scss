@@ -1,15 +1,14 @@
-// В этом файле должны быть стили для БЭМ-блока feedback, его элементов,
+// В этом файле должны быть стили для БЭМ-блока greeting, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.feedback {
+.greeting {
 
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
   flex-wrap: wrap;
   background: #fff;
-  padding: 40px 0;
   // flex-wrap: wrap;
 
   &__body {
@@ -40,10 +39,10 @@
   &__image {
     @include col();
     @include col(xl, 6);
-    height: 425px;
+    height: 600px;
     position: relative;
-    overflow: hidden;
     padding: 0 !important;
+    overflow: hidden;
     img {
       object-fit: cover;
       position: absolute;
@@ -52,16 +51,18 @@
     }
   }
 
-  &--no-pading {
-    padding: 0;
+  &__wrap {
+    padding: 35px;
+    max-width: 600px;
 
-    #{$block-name}__image {
-      height: 600px;
+    .separate {
+      margin: inherit;
     }
   }
 
-  &--main {
-    background: #fff;
+  &__autor {
+    font-family: 'Bad Script';
+    font-size: 24px;
   }
 
 }

@@ -33,7 +33,9 @@
     width: 57px;
     height: 57px;
     margin: auto;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
     svg {
       fill: #8dd6d7;
     }
