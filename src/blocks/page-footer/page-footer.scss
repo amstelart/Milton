@@ -16,6 +16,12 @@
   &__main {
     display: flex;
     padding: 30px 0;
+
+    @media (max-width:($screen-lg - 1)) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__logo {
@@ -28,6 +34,19 @@
       flex-grow: 1;
       padding: 0 30px;
     }
+
+    @media (max-width:($screen-lg - 1)) {
+      margin-bottom: 30px;
+
+      &--contacts,
+      &--nav {
+        display: none;
+      }
+
+      .social {
+        justify-content: center;
+      }
+    }
   }
 
   &__copyright {
@@ -35,5 +54,14 @@
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width:($screen-lg - 1)) {
+      flex-direction: column;
+      align-items: center;
+
+      p:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
   }
 }

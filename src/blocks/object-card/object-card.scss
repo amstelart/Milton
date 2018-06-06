@@ -14,6 +14,8 @@
     position: relative;
     img {
       object-fit: contain;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -24,8 +26,9 @@
   &__link {
     position: relative;
     display: block;
+    height: 200px;
 
-    &:before {
+    &:after {
       content: "";
       background: rgba(9, 44, 55, 0.7);
       position: absolute;
@@ -37,9 +40,27 @@
       transition: opacity $transition-time;
     }
 
+    &:before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      display: block;
+      background-image: svg-load('../blocks/search-form/bg-img/search.svg' , fill = #fff);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity $transition-time;
+      z-index: 3;
+    }
+
     &:hover,
     &:focus {
-      &:before {
+      &:before,
+      &:after {
         opacity: 1;
       }
     }

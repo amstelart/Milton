@@ -63,26 +63,45 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    padding: 30px 90px;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 5px 5px 0 5px;
     flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   &__title {
-    margin-top: ($line-height / 2);
-    margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 42px;
     line-height: 1.4;
     font-weight: 700;
     color: currentColor;
   }
 
+  &__caption {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
+    opacity: 0.2;
+
+    &:hover,
+    &:focus {
+      opacity: 0.4;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.9em 0.9em 0.7em;
   }
 
   &__body {

@@ -21,8 +21,9 @@
 
   &__card {
     @include col();
-    @include col(md, 4);
+    @include col(lg, 4);
     text-align: center;
+    margin-bottom: 30px;
 
     .separate {
       margin: 20px auto;

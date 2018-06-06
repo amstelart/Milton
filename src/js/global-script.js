@@ -1,6 +1,16 @@
 // Если на проекте jQuery
 $( document ).ready(function() {
 
+  $("#gallery").unitegallery({
+    gallery_theme: "grid",
+    gallery_width:"100%",
+    theme_panel_position: "right",
+    theme_hide_panel_under_width: 992,
+    tile_enable_border:true,
+    thumb_width:165,
+    thumb_height:133
+  });
+
   // area-slider
   var rangeSliderArea = document.getElementById('area-slider');
   var rangeSliderAreaStartInput = document.getElementById('area-slider-start');
@@ -58,31 +68,6 @@ $( document ).ready(function() {
   rangeSliderCostStartInput.addEventListener('change', function(){
     rangeSliderCost.noUiSlider.set([this.value, null]);
   });
-
-
-  // range slider
-  // var rangeSliderArea = document.getElementById('area-slider');
-  // var rangeSliderCost = document.getElementById('cost-slider');
-  //
-  // noUiSlider.create(rangeSliderArea, {
-  //   start: [70, 110],
-  //   connect: true,
-  //   step: 10,
-  //   range: {
-  //     'min': 0,
-  //     'max': 110
-  //   }
-  // });
-  //
-  // noUiSlider.create(rangeSliderCost, {
-  //   start: [70, 100],
-  //   connect: true,
-  //   step: 10,
-  //   range: {
-  //     'min': 0,
-  //     'max': 110
-  //   }
-  // });
 
 });
 

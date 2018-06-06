@@ -284,36 +284,40 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback feedback--main">
         <div class="feedback__body">
-          <h1 class="feedback__title">Заказать звонок</h1>
-          <p class="feedback__text">Наши менеджеры перезвонят вам и ответят на все вопросы</p>
-          <form action="" class="feedback-form">
-            <div class="feedback-form__flex">
-              <label class="field-text feedback-form__field">
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
-                </span>
-              </label>
-              <label class="field-text feedback-form__field">
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
-                </span>
-              </label>
-              <div class="field-actions feedback-form__field">
-                <button class="btn" type="submit">Заказать звонок</button>
+          <div class="feedback__inner">
+            <h2 class="section-title">Инвестиции в недвижимость</h2>
+            <div class="separate"></div>
+            <p class="feedback__text">Получите актуальную информацию об инвестировании в недвижимость</p>
+            <form action="" class="feedback-form">
+              <div class="feedback-form__flex">
+                <label class="field-text feedback-form__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text feedback-form__field">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+                  </span>
+                </label>
+                <div class="field-actions feedback-form__field">
+                  <button class="btn btn--main" type="submit">Оставить заявку</button>
+                </div>
               </div>
-            </div>
-            <div class="field-checkbox">
-              <label class="field-checkbox__name">
-                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                <span class="field-checkbox__name-text">Я принимаю условия передачи информации</span>
-              </label>
-            </div>
-          </form>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Я принимаю</span>
+                  <a href="#">условия передачи информации</a>
+                </label>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="feedback__image">
-          <img src="img/feedback-img.jpg" alt="">
+          <img src="img/feedback-img-02.jpg" alt="">
         </div>
       </section>
 
@@ -325,6 +329,7 @@
 
   </div>
 
+  @@include('blocks/modal/modal.html')
   @@include('_include/page_bottom.html')
 </body>
 </html>

@@ -6,6 +6,7 @@
 
   $block-name:                &; // #{$block-name}__element
   position: relative;
+  @include container;
 
   &__inner {
     @include row;
@@ -19,9 +20,14 @@
   }
 
   &__faq-wrap {
-    max-width: 710px;
-    padding-right: 80px;
-    float: right;
+
+    padding: 15px;
+
+    @media (min-width: $screen-lg) {
+      max-width: 710px;
+      padding-right: 80px;
+      float: right;
+    }
   }
 
   &__articles {
@@ -30,8 +36,13 @@
   }
 
   &__articles-wrap {
-    max-width: 400px;
-    float: left;
+
+    padding: 15px;
+
+    @media (min-width: $screen-lg) {
+      max-width: 400px;
+      float: left;
+    }
   }
 
 }

@@ -16,12 +16,20 @@
     @include container;
     display: flex;
     align-items: center;
+
+    @media (max-width:($screen-lg - 1)) {
+      align-items: flex-start;
+    }
   }
 
   &__part {
 
     &--contacts {
       flex-grow: 1;
+
+      @media (max-width:($screen-lg - 1)) {
+        display: none;
+      }
     }
   }
 

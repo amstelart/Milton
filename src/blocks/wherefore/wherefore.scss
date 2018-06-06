@@ -9,6 +9,9 @@
   padding: 45px 0;
   color: #fff;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &:before {
     content: "";
@@ -45,6 +48,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @media (max-width:($screen-lg - 1)) {
+      margin-bottom: 30px;
+    }
   }
 
   &__icon {
