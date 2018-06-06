@@ -64,16 +64,16 @@
                 </div>
                 <div class="page-contacts__item">
                   <div class="page-contacts__text">8 800 900 50 35</div>
-                  <a href="#" class="page-contacts__link">Обратный звонок</a>
+                  <a href="#modal-call" data-toggle="modal" class="page-contacts__link">Обратный звонок</a>
                 </div>
               </div>
             </div>
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
           </div>
         </div>
         <div class="page-header__nav">
           <div class="page-header__inner">
             <nav id="main-nav" class="main-nav main-nav--page" role="navigation">
-              <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
               <ul class="main-nav__list">
                 <li class="main-nav__item">
                   <a href="" class="main-nav__link main-nav__link--arrow">
@@ -82,37 +82,37 @@
                   <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
                     <ul class="main-nav__list  main-nav__list--lvl-2">
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Новостройки
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Квартиры
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Земля
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Коммерческая
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Инвестиционная
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Эксклюзивная
                         </a>
                       </li>
                       <li class="main-nav__item  main-nav__item--lvl-2">
-                        <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        <a href="page-object.html" class="main-nav__link  main-nav__link--lvl-2">
                           Аренда
                         </a>
                       </li>
@@ -448,7 +448,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="page-footer__part">
+            <div class="page-footer__part page-footer__part--contacts">
               <div class="page-contacts">
                 <div class="page-contacts__item page-contacts__item--adds">
                   <div class="page-contacts__text">8 800 900 50 35</div>
@@ -474,22 +474,57 @@
     </div>
 
   </div>
+
+  <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заказать звонок</h4>
+          <p class="modal__caption">Наши менеджеры перезвонят вам<br> и ответят на все вопросы</p>
+          <div class="separate"></div>
+        </div>
+        <div class="modal__body">
+          <form action="" class="form">
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Телефон" id="" name="">
+              </span>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--main">Оставить заявку</button>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text">Я принимаю</span>
+                <a href="#">условия передачи информации</a>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/unitegallery.min.js"></script>
+  <script src="js/ug-theme-grid.js"></script>
+  <script src="js/swipe.min.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="js/ofi.js"></script>
   <script src="js/script.min.js"></script>
-  <script type="text/javascript">
-
-    // jQuery(document).ready(function(){
-    //   jQuery("#gallery").unitegallery({
-    //     gallery_theme: "grid",
-    //     gallery_width:"100%",
-    //     theme_panel_position: "right",
-    //     theme_hide_panel_under_width: 992,
-    //     tile_enable_border:true,
-    //     thumb_width:165,
-    //     thumb_height:133
-    //   });
-    // });
-
-  </script>
+  <script src="js/global-script.js"></script>
 
 </body>
 </html>
