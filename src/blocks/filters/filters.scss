@@ -6,21 +6,22 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  display: flex;
-  align-items: flex-start;
+  @include row;
 
   &__item {
 
-    flex-grow: 1;
+    @include col();
+    @include col(xl, 4);
+    margin-bottom: 10px;
 
-    &:not(:first-child) {
-      margin-left: 30px;
+    .search-form {
+      max-width: 100%;
     }
   }
 
   &__title {
     font-size: 16px;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.3em;
     line-height: 1.4;
   }
 

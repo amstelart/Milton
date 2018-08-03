@@ -53,4 +53,16 @@
     font-weight: 300;
   }
 
+  &__more {
+    color: inherit;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 0.9375em;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
 }

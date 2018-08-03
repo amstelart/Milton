@@ -65,6 +65,7 @@ $transition-time:             0.3s !default;
     }
 
     &--lvl-2 {
+
       @media (max-width: ($menu-desktop-width - 1)) {
         position: static;
       }
@@ -174,7 +175,8 @@ $transition-time:             0.3s !default;
 
   &__sublist-wrapper {
 
-
+    border: 1px solid #ddddde;
+    
     &--lvl-2 {
 
       @media (min-width: $menu-desktop-width) {

@@ -61,6 +61,17 @@
     }
   }
 
+  &__answer-more {
+    color: inherit;
+    text-decoration: underline;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
   &__more-link {
     color: inherit;
     font-weight: 600;
